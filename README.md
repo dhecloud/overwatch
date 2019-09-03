@@ -17,9 +17,9 @@ No extra packages needed! Just git clone this repository to your project folder
 3. At the start of your training script,  
 
 ```
-import overwatch as ow
-wc = ow.webhook.WebHookConfig()
-wh = ow.webhook.WebHook(wc)
+from overwatch.webhook import WebHookConfig, WebHook 
+wc = WebHookConfig() 
+wh = WebHook(wc) 
 ```
 
 There will be an exception called if your webhook details are invalid
